@@ -1,0 +1,281 @@
+md-sidenav {
+	position: static !important;
+	display: -webkit-box !important;
+	display: -webkit-flex !important;
+	display: flex !important;
+	//-webkit-transform: translate3d(0, 0, 0) !important;
+	//transform: translate3d(0, 0, 0) !important;
+	width: 100%;
+	max-width: 100%;
+	height: 129px;
+	max-height: 100%;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	transition-property: transform;
+	transition-duration: 1s;
+}
+
+md-toolbar {
+	padding: 16px;
+	height: 151px;
+	box-sizing: border-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	background-color: #263238 !important;
+}
+
+.avatar {
+	width: 48px;
+	height: 48px;
+	border-radius: 24px;
+}
+
+.mdl-navigation {
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	padding-top: 16px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	box-sizing: border-box;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	background-color: #37474f !important;
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+a.mdl-navigation__link {
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	text-decoration: none;
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0;
+	opacity: .87;
+	display: block;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	padding: 16px 40px;
+	display: -webkit-flex !important;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.56);
+	font-weight: 500;
+
+	&:hover {
+		background-color: #00BCD4;
+		color: #37474F;
+	}
+}
+
+.mdl-layout__container {
+	width: 100%;
+	height: 100%;
+
+	section {
+		height: 100%;
+		-webkit-flex-flow: row wrap;
+		flex-flow: row wrap;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow-y: auto;
+		overflow-x: hidden;
+		position: relative;
+	}
+}
+
+.user-data {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #eceff1 !important;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 32px;
+}
+
+.mdl-navigation__js-ripple-effect {
+	transition: transform .3s cubic-bezier(0,0,.2,1),width .3s cubic-bezier(0,0,.2,1),height .3s cubic-bezier(0,0,.2,1),opacity .6s cubic-bezier(0,0,.2,1);
+	transition: transform .3s cubic-bezier(0,0,.2,1),width .3s cubic-bezier(0,0,.2,1),height .3s cubic-bezier(0,0,.2,1),opacity .6s cubic-bezier(0,0,.2,1),-webkit-transform .3s cubic-bezier(0,0,.2,1);
+	-webkit-tap-highlight-color: rgba(255,255,255,0);
+	outline: none;
+	cursor: pointer;
+	will-change: box-shadow;
+	transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+}
+
+header {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-justify-content: flex-start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin: 0;
+	padding: 0;
+	border: none;
+	min-height: 64px;
+	max-height: 1000px;
+	z-index: 3;
+	transition-duration: .2s;
+	transition-timing-function: cubic-bezier(.4,0,.2,1);
+	transition-property: max-height,box-shadow;
+	width: calc(100% - 240px);
+	color: #757575;
+	height: 64px;
+}
+
+.drawer-button {
+	display: block;
+	height: 48px;
+	width: 48px;
+	border: 0;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+	font-size: 26px;
+	font-family: Helvetica,Arial,sans-serif;
+	margin: 8px 12px;
+	top: 0;
+	left: 0;
+	z-index: 4;
+	line-height: 54px;
+	position: absolute;
+	color: rgb(66,66,66);
+	background-color: inherit;
+	color: rgba(0, 0, 0, 0.54);
+}
+
+.mdl-layout__header-row {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-flex-shrink: 0;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	-webkit-align-self: stretch;
+	-ms-flex-item-align: stretch;
+	align-self: stretch;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 64px;
+	margin: 0;
+	padding: 0 40px 0 80px;
+}
+
+.mdl-layout-title {
+	display: block;
+	position: relative;
+	font-family: "Roboto","Helvetica","Arial",sans-serif;
+	font-size: 20px;
+	line-height: 1;
+	letter-spacing: .02em;
+	font-weight: 400;
+	box-sizing: border-box;
+}
+
+.center {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.mdl-layout-spacer {
+	-webkit-flex-grow: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.apps {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	text-decoration: none;
+	margin: 0;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0;
+	opacity: .87;
+	display: block;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	padding: 16px 40px;
+	display: -ms-flexbox !important;
+	display: flex !important;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-align: center;
+	align-items: center;
+	color: rgba(255, 255, 255, 0.56);
+	font-weight: 500;
+	font-size: 30px;
+}
+
+.mdl-navigation__link.apps {
+	padding:0;
+}
+.mdl-navigation .fa {
+	font-size:40px;
+}
+
+a.mdl-navigation__link:hover .fa {
+	color: #737c80;
+}
+
+.user-data {
+	text-transform: capitalize
+}
+

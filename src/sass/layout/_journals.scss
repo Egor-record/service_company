@@ -1,0 +1,125 @@
+.mdl-grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+}
+
+.mdl-grid__container {
+  max-width: 1635px;
+}
+
+.mdl-cell {
+  margin: 8px;
+  width: calc(33.3333333333% - 16px);
+  box-sizing: border-box;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  background-color: #fff !important;
+}
+
+.mdl-cell--12-col {
+  width: calc(100% - 16px);
+}
+
+h1 {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  color: #424242;
+}
+
+.content {
+  padding: 50px 40px;
+}
+
+table {
+  position: relative;
+  border: 1px solid rgba(0,0,0,.12);
+  border-collapse: collapse;
+  white-space: nowrap;
+  font-size: 13px;
+  background-color: #fff;
+  margin-top: 20px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+table.is-visible {
+  visibility: visible;
+  opacity:1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+thead {
+  padding-bottom: 3px;
+}
+
+th {
+  position: relative;
+  vertical-align: bottom;
+  text-overflow: ellipsis;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
+  height: 48px;
+  font-size: 12px;
+  color: rgba(0,0,0,.54);
+  box-sizing: border-box;
+  padding: 0 18px 12px 18px;
+  padding-bottom: 8px;
+  text-align: right;
+}
+
+tbody tr {
+  position: relative;
+  height: 48px;
+  transition-duration: .28s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+  transition-property: background-color;
+}
+
+td {
+  text-align: center;
+}
+
+.responsive-table {
+  overflow-y: hidden;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  width: 100%;
+}
+
+th {
+  text-transform: capitalize
+}
+
+main {
+  position: absolute;
+  top: 63px;
+}
+
+td:empty {
+  background-color: #fafafa;
+}
+
+td:empty:after {
+  content: 'пусто';
+}
+
+.is-true:empty:after {
+  content: 'да';
+}
+
+.is-false:empty:after {
+  content: 'нет';
+}
+
+.content p {
+  padding:10px 0;
+}

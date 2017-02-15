@@ -1,0 +1,41 @@
+.mdl-grid.mdl-grid__container
+    .mdl-cell.mdl-cell--12-col.center.content(ng-controller="JournalsCtrl")
+        h1 Журналы
+        p Долг за прошедший период: {{(reportData.data.footer[0].saldo_out - reportData.data.footer[0].saldo_in).toFixed(2) }}
+        .responsive-table
+            table#journals-table(hideOnLoading="")
+                thead
+                    tr
+                        th {{reportData.data.header[0].name}}
+                        th {{reportData.data.header[1].name}}
+                        th {{reportData.data.header[2].name}}
+                        th {{reportData.data.header[3].name}}
+                        th {{reportData.data.header[4].name}}
+                        th {{reportData.data.header[5].name}}
+                        th {{reportData.data.header[6].name}}
+                        th {{reportData.data.header[7].name}}
+                        th {{reportData.data.header[8].name}}
+                        th {{reportData.data.header[9].name}}
+                        th {{reportData.data.header[10].name}}
+                        th {{reportData.data.header[11].name}}
+                        th {{reportData.data.header[12].name}}
+                        th {{reportData.data.header[13].name}}
+                        th {{reportData.data.header[14].name}}
+
+                tbody
+                    tr(ng-repeat="table in journalsData")
+                        td {{reportData.data.body[$index].area_number}}
+                        td {{reportData.data.body[$index].short_name}}
+                        td {{reportData.data.body[$index].saldo_in}}
+                        td {{(reportData.data.body[$index].value_a[0])}}
+                        td {{(reportData.data.body[$index].doc_a[0]).slice(-6)}}
+                        td {{(reportData.data.body[$index].month_p[0])}}
+                        td {{(reportData.data.body[$index].date_a[0]).substring(10, -1)}}
+                        td {{reportData.data.body[$index].value_p[0]}}
+                        td {{reportData.data.body[$index].doc_p[0]}}
+                        td {{reportData.data.body[$index].month_p[0]}}
+                        td {{(reportData.data.body[$index].date_p[0]).substring(10, -1)}}
+                        td {{(reportData.data.body[$index].saldo_out)}}
+                        td(class="is-{{(reportData.data.body[$index].is_responsible)}}")
+                        td {{(reportData.data.body[$index].house).slice(-6)}}
+                        td {{(reportData.data.body[$index].account).slice(6)}}

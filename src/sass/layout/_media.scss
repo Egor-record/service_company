@@ -1,0 +1,155 @@
+@media (max-width: 1700px) and (min-width: 1280px) {
+  md-toolbar {
+    height: 133px;
+    min-height: 133px;
+    width: 294px;
+    -ms-flex-direction: row;
+    flex-direction: row-reverse;
+    -ms-flex-pack: start;
+    justify-content: space-between;
+  }
+
+  .mdl-navigation {
+    padding-top: 0;
+    flex-direction: row;
+    -ms-flex-direction: column;
+    height: 133px;
+  }
+
+  header {
+    position: absolute;
+    top: 139px;
+    width: 100%;
+    left: 0;
+  }
+
+  .mdl-layout-title {
+    z-index: 34;
+  }
+
+  main {
+    position: absolute;
+    top: 199px;
+    left: 0;
+    width: 100%;
+  }
+
+  .fa.fa-bars {
+    display: none;
+  }
+
+  .mdl-navigation__wrapper {
+    display: flex;
+    display: -ms-flexbox;
+  }
+
+  md-sidenav {
+    height: 133px;
+  }
+
+}
+
+@include breakpoint(1279){
+  .mdl-layout__container section {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  md-sidenav {
+    width: 240px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height:100%;
+    position: absolute !important;
+    left: -150px;
+  }
+
+
+  md-toolbar {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 21px;
+    height: 184px;
+  }
+
+  main {
+    left: 10px;
+    width: 100%;
+  }
+}
+
+@include breakpoint(1280){
+  main {
+    left:0;
+  }
+}
+
+@media screen and (min-width: 1700px) {
+    .mdl-layout__container section {
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+  md-sidenav {
+      width: 240px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      height:100%;
+  }
+
+  md-toolbar {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 21px;
+    height: 184px;
+  }
+
+  main {
+    position: absolute;
+    top: 63px;
+    left: 252px;
+  }
+
+}
+
+@media screen and (min-width: 1281px) {
+  md-sidenav {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  .mdl-layout__header-row{
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: 840px) {
+  .mdl-grid {
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: landscape) {
+  md-toolbar {
+    display: none;
+  }
+}
+
+
+
+
